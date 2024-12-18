@@ -28,10 +28,20 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Vickins Tech - Home" });
 });
 
+app.get("/contact", (req, res) => {
+       res.render("contact", { title: "Vickins Tech - Contact" });
+     });
+
 // 404 Route
 app.use((req, res) => {
-  res.status(404).send("404 - Page Not Found");
-});
+       res.status(404).render("404", { title: "404 - Page Not Found" });
+     });
+     
+     // 500 Route
+     app.use((err, req, res, next) => {
+       console.error(err.stack);
+       res.status(500).render("500", { title: "500 - Server Error" });
+     });
 
 // Start the server
 app.listen(PORT, () => {
