@@ -283,7 +283,7 @@
         
     // AJAX MailChimp
     $(".newsletter-form").ajaxChimp({
-        url: "https://hibootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
+        url: "https://leasecaptain.com", // Your url MailChimp
         callback: callbackFunction
     });
 
@@ -297,20 +297,20 @@ function setTheme(themeName) {
 
 // function to toggle between light and dark theme
 function toggleTheme() {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
+    if (localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark');
+    } else {
+        setTheme('theme-light');
     }
 }
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
+    if (localStorage.getItem('theme') === 'theme-light') {
+        setTheme('theme-light');
         document.getElementById('slider').checked = false;
     } else {
-        setTheme('theme-light');
+        setTheme('theme-dark');
       document.getElementById('slider').checked = true;
     }
 })();

@@ -32,13 +32,61 @@ app.get("/contact", (req, res) => {
        res.render("contact", { title: "Vickins Tech - Contact" });
      });
 
+app.get("/about", (req, res) => {
+      res.render("about", { title: "Vickins Tech - About" });
+    });
+
+app.get("/consultant", (req, res) => {
+      res.render("consultant", { title: "Vickins Tech" });
+    });
+
+app.get("/apps", (req, res) => {
+      res.render("apps", { title: "Vickins Tech - About" });
+    });
+
+app.get("/cloud", (req, res) => {
+      res.render("cloud", { title: "Vickins Tech " });
+    });
+
+app.get("/strategies", (req, res) => {
+      res.render("strategies", { title: "Vickins Tech " });
+    });
+
+app.get("/data", (req, res) => {
+      res.render("data", { title: "Vickins Tech " });
+    });
+
+    app.get("/terms", (req, res) => {
+      res.render("terms", { title: "Vickins Tech " });
+    });
+
+    app.get("/policy", (req, res) => {
+      res.render("privacy", { title: "Vickins Tech " });
+    });
+
+    app.get("/case", (req, res) => {
+      res.render("case", { title: "Vickins Tech " });
+    });
+
+    app.get("/web", (req, res) => {
+      res.render("web", { title: "Vickins Tech " });
+    });
+
+    app.get("/services", (req, res) => {
+      res.render("service", { title: "Vickins Tech " });
+    });
+
+    app.get("/techtrends", (req, res) => {
+      res.render("techtrends", { title: "Vickins Tech " });
+    });
+
 // 404 Route
 app.use((req, res) => {
        res.status(404).render("404", { title: "404 - Page Not Found" });
      });
      
      // 500 Route
-     app.use((err, req, res, next) => {
+app.use((err, req, res, next) => {
        console.error(err.stack);
        res.status(500).render("500", { title: "500 - Server Error" });
      });

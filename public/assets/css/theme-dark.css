@@ -1,7 +1,7 @@
 .switch-box {
   position: fixed;
-  top: 200px;
-  right: 20px;
+  top: 80px;
+  right: 10px;
   z-index: 9999;
 }
 .switch-box .slider {
@@ -76,7 +76,7 @@
   color: #ffffff;
 }
 .theme-dark body {
-  background: #1d1d1d;
+  background: #000000;
 }
 .theme-dark .section-title h2 {
   color: #ffffff;
@@ -85,10 +85,10 @@
   color: #ffffff;
 }
 .theme-dark .top-header-bg {
-  background: #1d1d1d;
+  background: #000000;
 }
 .theme-dark .top-header-right .language-list .nice-select .list {
-  background-color: #252525;
+  background-color: #000000;
   color: #ffffff;
 }
 .theme-dark .top-header-right .language-list .nice-select .list .option {
@@ -107,7 +107,7 @@
   background-color: #0071dc;
 }
 .theme-dark .main-nav {
-  background-color: #252525;
+  background-color: #000000;
 }
 .theme-dark .main-nav .navbar .navbar-brand .logo-one {
   display: none;
@@ -122,13 +122,13 @@
   color: #ffffff;
 }
 .theme-dark .main-nav nav .navbar-nav .nav-item .dropdown-menu {
-  background-color: #252525 !important;
+  background-color: #000000 !important;
 }
 .theme-dark .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
   color: #ffffff !important;
 }
 .theme-dark .main-nav .nav-side .nav-side-item .search-side-widget .search-side-form .form-control {
-  background-color: #1d1d1d;
+  background-color: #000000;
   color: #ffffff;
 }
 .theme-dark .main-nav .nav-side .nav-side-item .search-box i {
@@ -141,27 +141,27 @@
   display: none;
 }
 .theme-dark .mean-container .mean-bar {
-  background-color: #252525;
+  background-color: #000000;
 }
 .theme-dark .mean-container .navbar-nav {
-  background-color: #1d1d1d;
+  background-color: #000000;
 }
 .theme-dark .mean-container .mean-nav ul li a {
   color: #ffffff;
 }
 .theme-dark .mean-container .mean-nav ul li .dropdown-menu {
-  background-color: #1d1d1d;
+  background-color: #000000;
 }
 .theme-dark .banner-item::before {
-  background-color: #1d1d1d;
+  background-color: #000000;
   opacity: 0.9;
 }
 .theme-dark .banner-area::before {
-  background-color: #1d1d1d;
+  background-color: #000000;
   opacity: 0.8;
 }
 .theme-dark .banner-area-two {
-  background-color: #1d1d1d;
+  background-color: #000000;
 }
 .theme-dark .banner-area-two::before {
   opacity: 0.1;
@@ -609,10 +609,10 @@
   color: #ffffff;
 }
 .theme-dark .footer-bg {
-  background-color: #252525;
+  background-color: #000000;
 }
 .theme-dark .footer-bg2 {
-  background-color: #252525;
+  background-color: #000000;
 }
 .theme-dark .footer-widget .footer-call-content {
   background-color: #010101;

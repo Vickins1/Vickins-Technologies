@@ -1,777 +1,936 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    
+
 <head>
-        <!-- Required Meta Tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS --> 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Animate Min CSS -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <!-- Flaticon CSS -->
-        <link rel="stylesheet" href="assets/fonts/flaticon.css">
-        <!-- Boxicons CSS -->
-        <link rel="stylesheet" href="assets/css/boxicons.min.css">
-        <!-- Owl Carousel Min CSS --> 
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<!-- Required Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Animate Min CSS -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<!-- Flaticon CSS -->
+	<link rel="stylesheet" href="assets/fonts/flaticon.css">
+	<!-- Boxicons CSS -->
+	<link rel="stylesheet" href="assets/css/boxicons.min.css">
+	<!-- Owl Carousel Min CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <!--=== Magnific Popup Min CSS ===-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-        <!-- Nice Select CSS --> 
-        <link rel="stylesheet" href="assets/css/nice-select.min.css">
-        <!-- Meanmenu CSS -->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- Theme Dark CSS -->
-        <link rel="stylesheet" href="assets/css/theme-dark.css">
-        <!--=== Title & Favicon ===-->
-        <title>VICKINS TECHNOLOGIES</title>
-        <link rel="icon" type="image/png" href="assets/images/vicon.png">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<!--=== Magnific Popup Min CSS ===-->
+	<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="assets/css/nice-select.min.css">
+	<!-- Meanmenu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- Theme Dark CSS -->
+	<link rel="stylesheet" href="assets/css/theme-dark.css">
+	<!--=== Title & Favicon ===-->
+	<title>VICKINS TECHNOLOGIES</title>
+	<link rel="icon" type="image/png" href="assets/images/vicon.png">
 
-    </head>
-    <body>
-       <!-- Pre Loader -->
-<div class="preloader">
-	<div class="loader">
-	    <span></span>
-	    <span></span>
-	    <span></span>
+</head>
+
+<body>
+	<!-- Pre Loader -->
+	<div class="preloader">
+		<div class="loader">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</div>
-   </div>
-   <!-- End Pre Loader -->
+	<!-- End Pre Loader -->
 
-   <!-- Preloader CSS -->
-   <style>
-	/* Preloader Background */
-	.preloader {
-	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background-color: #ffffff; /* White background */
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    z-index: 9999;
-	}
-   
-	/* Loader Animation */
-	.loader {
-	    display: flex;
-	    justify-content: space-between;
-	    width: 80px;
-	}
-   
-	.loader span {
-	    display: inline-block;
-	    width: 16px;
-	    height: 16px;
-	    background-color: #007bff;
-	    border-radius: 50%;
-	    animation: bounce 1.5s infinite ease-in-out;
-	}
-   
-	.loader span:nth-child(2) {
-	    animation-delay: 0.3s;
-	}
-   
-	.loader span:nth-child(3) {
-	    animation-delay: 0.6s;
-	}
-   
-	@keyframes bounce {
-	    0%, 80%, 100% {
-		 transform: scale(0);
-	    }
-	    40% {
-		 transform: scale(1);
-	    }
-	}
-   </style>
+	<!-- Preloader CSS -->
+	<style>
+		/* Preloader Background */
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #ffffff;
+			/* White background */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 9999;
+		}
 
-        <!-- Start Navbar Area -->
-        <div class="navbar-area">
+		/* Loader Animation */
+		.loader {
+			display: flex;
+			justify-content: space-between;
+			width: 80px;
+		}
 
-            <div class="mobile-nav">
-                 <a href="index.html" class="logo">
-			<img src="assets/images/logo1.png" class="logo-one" style="width: 60px; height: auto;" alt="Logo">
-			<img src="assets/images/logo2.png" class="logo-two" style="width: 60px; height: auto;" alt="Logo">
-			
-                </a>
-            </div>
+		.loader span {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-color: #007bff;
+			border-radius: 50%;
+			animation: bounce 1.5s infinite ease-in-out;
+		}
 
-           <!-- Menu For Desktop Device -->
-<div class="main-nav">
-	<div class="container">
-	    <nav class="navbar navbar-expand-md navbar-light">
-		 <a class="navbar-brand" href="index.html">
-		     <img src="assets/images/logo1.png" class="logo-one" style="width: 80px; height: auto;" alt="Logo">
-		     <img src="assets/images/logo2.png" class="logo-two" style="width: 80px; height: auto;" alt="Logo">
-		 </a>
-   
-		 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-		     <ul class="navbar-nav m-auto">
-			  <li class="nav-item">
-			      <a href="index.html" class="nav-link active">Home</a>
-			  </li>
-   
-			  <li class="nav-item">
-			      <a href="about.html" class="nav-link">About</a>
-			  </li>
-   
-			  <li class="nav-item">
-			      <a href="#" class="nav-link">
-				   Services
-				   <i class='bx bx-caret-down'></i>
-			      </a>
-			      <ul class="dropdown-menu">
-				   <li class="nav-item">
-					<a href="service-details.html" class="nav-link">IT Consultancy</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="service-details.html" class="nav-link">Business Solutions</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="service-details.html" class="nav-link">Web Development</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="service-details.html" class="nav-link">Cloud Computing</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="service-details.html" class="nav-link">Data Analysis</a>
-				   </li>
-			      </ul>
-			  </li>
-			  <li class="nav-item">
-			      <a href="#" class="nav-link">
-				   Blog
-				   <i class='bx bx-caret-down'></i>
-			      </a>
-			      <ul class="dropdown-menu">
-				   <li class="nav-item">
-					<a href="blog-1.html" class="nav-link">Technology Trends</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="blog-2.html" class="nav-link">Business Strategies</a>
-				   </li>
-				   <li class="nav-item">
-					<a href="blog-details.html" class="nav-link">Case Studies</a>
-				   </li>
-			      </ul>
-			  </li>
+		.loader span:nth-child(2) {
+			animation-delay: 0.3s;
+		}
 
-			  <li class="nav-item">
-			      <a href="contact.html" class="nav-link">Shop</a>
-			  </li>
-		     </ul>
-		   
-		     <div class="nav-side d-display">
-			  <div class="nav-side-item">
-			      <div class="get-btn">
-				   <a href="tel:+254794501005" class="default-btn btn-bg-two border-radius-50">
-					Contact Support <i class='bx bx-phone'></i>
-				   </a>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-	    </nav>
+		.loader span:nth-child(3) {
+			animation-delay: 0.6s;
+		}
+
+		@keyframes bounce {
+
+			0%,
+			80%,
+			100% {
+				transform: scale(0);
+			}
+
+			40% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+	<!-- Start Navbar Area -->
+	<div class="navbar-area">
+
+		<div class="mobile-nav">
+			<a href="/" class="logo">
+				<img src="assets/images/logo1.png" class="logo-one" style="width: 60px; height: auto;"
+					alt="Logo">
+				<img src="assets/images/logo2.png" class="logo-two" style="width: 60px; height: auto;"
+					alt="Logo">
+			</a>
+		</div>
+
+		<!-- Menu For Desktop Device -->
+		<div class="main-nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<a class="navbar-brand" href="/">
+						<img src="assets/images/logo1.png" class="logo-one"
+							style="width: 80px; height: auto;" alt="Logo">
+						<img src="assets/images/logo2.png" class="logo-two"
+							style="width: 80px; height: auto;" alt="Logo">
+					</a>
+
+					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item">
+								<a href="/" class="nav-link active"><strong>Home</strong></a>
+							</li>
+							<li class="nav-item">
+								<a href="/about" class="nav-link"><strong>About</strong></a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<strong>Services</strong>
+									<i class='bx bx-caret-down'></i>
+								</a>
+								<ul class="dropdown-menu">
+									
+									<li class="nav-item">
+										<a href="/consultant" class="nav-link">IT
+											Consultancy</a>
+									</li>
+									<li class="nav-item">
+										<a href="/apps" class="nav-link">Applications
+											Development</a>
+									</li>
+									<li class="nav-item">
+										<a href="/web" class="nav-link">Web
+											Development</a>
+									</li>
+									<li class="nav-item">
+										<a href="/cloud" class="nav-link">Cloud
+											Computing</a>
+									</li>
+									<li class="nav-item">
+										<a href="/data" class="nav-link">Data Analysis</a>
+									</li>
+									<li class="nav-item">
+										<a href="https://leasecaptain.com" class="nav-link">Property Listing & Management</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<strong>Blog</strong>
+									<i class='bx bx-caret-down'></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="/techtrends" class="nav-link">Technology
+											Trends</a>
+									</li>
+									<li class="nav-item">
+										<a href="/strategies" class="nav-link">Business
+											Strategies</a>
+									</li>
+									<li class="nav-item">
+										<a href="/case" class="nav-link">Case Studies</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item">
+								<a href="https://store.vickinstechnologies.com" alt="blank"
+									class="nav-link"><strong>Store</strong></a>
+							</li>
+						</ul>
+
+						<div class="nav-side d-display">
+							<div class="nav-side-item">
+								<div class="get-btn">
+									<a href="tel:+254794501005"
+										class="default-btn btn-bg-two border-radius-50">
+										Contact Support <i class='bx bx-phone'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="side-nav-responsive">
+			<div class="container-max">
+				<div class="dot-menu">
+					<div class="circle-inner">
+						<div class="in-circle circle-one"></div>
+						<div class="in-circle circle-two"></div>
+						<div class="in-circle circle-three"></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="side-nav-inner">
+						<div class="side-nav justify-content-center align-items-center">
+							<div class="side-nav-item nav-side">
+								<div class="search-box">
+									<i class='bx bx-search'></i>
+								</div>
+								<div class="get-btn">
+									<a href="tel:+254794501005"
+										class="default-btn btn-bg-two border-radius-50">
+										Contact Support </i>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-   </div>
-            <div class="side-nav-responsive">
-                <div class="container-max">
-                    <div class="dot-menu">
-                        <div class="circle-inner">
-                            <div class="in-circle circle-one"></div>
-                            <div class="in-circle circle-two"></div>
-                            <div class="in-circle circle-three"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="container">
-                        <div class="side-nav-inner">
-                            <div class="side-nav justify-content-center align-items-center">
-                                <div class="side-nav-item nav-side">
-                                    <div class="search-box">
-                                        <i class='bx bx-search'></i>
-                                    </div>
-                                    <div class="get-btn">
-						<a href="tel:+254794501005" class="default-btn btn-bg-two border-radius-50">
-						    Contact Support </i>
+	<!-- End Navbar Area -->
+
+	<!-- Search Overlay -->
+	<div class="search-overlay">
+		<div class="d-table">
+			<div class="d-table-cell">
+				<div class="search-layer"></div>
+				<div class="search-layer"></div>
+				<div class="search-layer"></div>
+
+				<div class="search-close">
+					<span class="search-close-line"></span>
+					<span class="search-close-line"></span>
+				</div>
+
+				<div class="search-form">
+					<form>
+						<input type="text" class="input-search" placeholder="Search here...">
+						<button type="submit"><i class='bx bx-search'></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Search Overlay -->
+	 
+	<!-- Banner Five Area -->
+	<div class="banner-five-area">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="banner-five-content">
+						<span>
+							<strong>ADVANCED TECHNOLOGY & INNOVATIVE IT SOLUTIONS</strong>
+						</span>
+
+						<h1 style="font-size: 45px;">Transform Your Business with <b>Cutting-Edge</b> Technology & Digital
+							Innovation</h1>
+						<p>
+							At Vickins Technologies, we specialize in providing tailor-made IT
+							solutions that empower businesses globally. From cloud computing and
+							web development to IT consultancy, we deliver high-performance
+							solutions to optimize your operations and drive growth.
+						</p>
+						<a href="/contact" class="default-btn btn-bg-two border-radius-50 ">Request A
+							Free Consultation</a>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="banner-five-img">
+						<img src="assets/images/home-five-img.png"
+							alt="Vickins Technologies Solutions">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner Area Five End -->
+
+
+	<!-- Work Process Area -->
+	<section class="work-process-area pt-100 pb-70">
+		<div class="container">
+			<div class="section-title text-center">
+				<span class="sp-color2">Our Working Process</span>
+				<h2>How Our IT Solutions Drive Your Business Growth</h2>
+			</div>
+
+			<div class="row pt-45">
+				<div class="col-lg-3 col-sm-6">
+					<div class="work-process-card-three">
+						<div class="number-title">01.</div>
+						<h3>Discovery</h3>
+						<p>We start by understanding your unique business needs and challenges,
+							ensuring that we tailor our solutions to your specific goals.</p>
+						<i class="flaticon-project"></i>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="work-process-card-three">
+						<div class="number-title">02.</div>
+						<h3>Planning</h3>
+						<p>Based on the discovery phase, we plan the best approach using the latest
+							technology to optimize your business operations.</p>
+						<i class="flaticon-chip"></i>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="work-process-card-three">
+						<div class="number-title">03.</div>
+						<h3>Execute</h3>
+						<p>Our team of experts efficiently implements the solutions, ensuring smooth
+							integration and minimal disruption to your operations.</p>
+						<i class="flaticon-effective"></i>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="work-process-card-three">
+						<div class="number-title">04.</div>
+						<h3>Deliver</h3>
+						<p>We deliver high-quality results, ensuring that the solutions meet your
+							expectations and drive measurable growth for your business.</p>
+						<i class="flaticon-bullhorn"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Work Process Area End -->
+
+
+	<!-- About Area -->
+	<div class="about-area about-bg2 pt-100 pb-70">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="about-img-4">
+						<img src="assets/images/about/about-img4.png" alt="About Us Image">
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="about-content-3 ml-20">
+						<div class="section-title">
+							<span class="sp-color2">About Vickins Technologies</span>
+							<h2>Your Trusted Partner for Software Innovation</h2>
+							<p>
+								At Vickins Technologies, we specialize in providing cutting-edge
+								software solutions and digital technologies.
+								With over 7 years of experience, we are committed to helping
+								businesses drive success through innovative technology and
+								expert consulting.
+							</p>
+						</div>
+						<h3>We Have 7+ Years of Experience in Offering IT Solutions & Digital
+							Technology Services</h3>
+						<div class="all-skill-bar">
+							<div class="skill-bar" data-percentage="90%">
+								<h4 class="progress-title-holder clearfix">
+									<span class="progress-title">Analytics</span>
+									<span class="progress-number-wrapper">
+										<span class="progress-number-mark">
+											<span class="percent">90%</span>
+										</span>
+									</span>
+								</h4>
+								<div class="progress-content-outter">
+									<div class="progress-content" style="width: 90%;"></div>
+								</div>
+							</div>
+
+							<div class="skill-bar mb-0" data-percentage="80%">
+								<h4 class="progress-title-holder clearfix">
+									<span class="progress-title">Solutions</span>
+									<span class="progress-number-wrapper">
+										<span class="progress-number-mark">
+											<span class="percent">80%</span>
+										</span>
+									</span>
+								</h4>
+								<div class="progress-content-outter">
+									<div class="progress-content" style="width: 80%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About Area End -->
+
+
+	<!-- Services Area -->
+	<section class="services-area-four pt-100 pb-70">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4">
+					<div class="services-left">
+						<div class="section-title">
+							<span class="sp-color2">Our Services</span>
+							<h2>Looking for the Perfect IT Solution? We Provide Tailored IT
+								Solutions</h2>
+							<p class="margin-auto">
+								At Vickins Technologies, we specialize in offering innovative IT
+								solutions, ensuring that your business stays ahead of the curve.
+								Our expertise spans across various domains including IT
+								consulting, cloud computing, web development, and business
+								reform.
+							</p>
+						</div>
+						<a href="/services"
+							class="default-btn btn-bg-two border-radius-50 text-center">View All
+							Services</a>
+					</div>
+				</div>
+
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-consultant"></i>
+								<h3><a href="/services">IT Consulting</a></h3>
+								<p>Our IT consulting services guide you through complex IT
+									decisions, offering customized solutions to improve your
+									business operations and technology infrastructure.</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-consulting"></i>
+								<h3><a href="/services">Cloud Computing</a></h3>
+								<p>We provide scalable cloud computing solutions that enhance
+									your business's flexibility and efficiency, allowing you
+									to store and manage data seamlessly across multiple
+									platforms.</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-web-development"></i>
+								<h3><a href="/services">Web Development</a></h3>
+								<p>Our expert web development team builds user-friendly,
+									responsive, and feature-rich websites tailored to your
+									business needs, ensuring optimal user experiences.</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-web-development"></i>
+								<h3><a href="/services">Applications Development</a></h3>
+								<p>Our expert Apps development team builds user-friendly,
+									responsive, and feature-rich Applications tailored to
+									your business needs, ensuring optimal user experiences.
+								</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-stats"></i>
+								<h3><a href="/services">Business Reform</a></h3>
+								<p>We assist in transforming your business strategies,
+									optimizing workflows, and adopting best practices to
+									enhance performance and drive long-term success.</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+
+						<!-- Graphic Design Service -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="services-card services-card-color-bg">
+								<i class="flaticon-project"></i>
+								<h3><a href="/services">Graphic Design</a></h3>
+								<p>Our creative team delivers professional graphic design
+									services, creating visually striking logos, branding,
+									marketing materials, and digital assets that captivate
+									your audience.</p>
+								<a href="/services" class="learn-btn">Learn More <i
+										class='bx bx-chevron-right'></i></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Area End -->
+
+	<!-- Counter Area -->
+	<div class="counter-area pt-100 pb-70">
+		<div class="container">
+			<div class="section-title text-center">
+				<span class="sp-color2">Our Success Numbers</span>
+				<h2>Check Out Our Business Growth and Achievements</h2>
+				<p>
+					We are proud of the milestones we've achieved in the industry. From successful
+					project completions to innovative IT consulting, our numbers reflect the impact we've
+					made.
+				</p>
+			</div>
+
+			<div class="row pt-45">
+				<div class="col-lg-3 col-6 col-md-3">
+					<div class="counter-another-content">
+						<i class="flaticon-web-development"></i>
+						<h3>26+</h3>
+						<span>Delivered Projects</span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6 col-md-3">
+					<div class="counter-another-content">
+						<i class="flaticon-consulting-1"></i>
+						<h3>105+</h3>
+						<span>IT Consulting Sessions</span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6 col-md-3">
+					<div class="counter-another-content">
+						<i class="flaticon-startup"></i>
+						<h3>35+</h3>
+						<span>Businesses Launched</span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6 col-md-3">
+					<div class="counter-another-content">
+						<i class="flaticon-tick"></i>
+						<h3>26+</h3>
+						<span>Projects Completed</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="counter-shape">
+			<div class="shape1">
+				<img src="assets/images/shape/shape1.png" alt="Decorative Shape 1">
+			</div>
+			<div class="shape2">
+				<img src="assets/images/shape/shape2.png" alt="Decorative Shape 2">
+			</div>
+		</div>
+	</div>
+	<!-- Counter Area End -->
+
+
+
+	<!-- Technology Area -->
+	<section class="technology-area-four pt-100 pb-70">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="technology-right">
+						<div class="section-title">
+							<span class="sp-color2">Technology Index</span>
+							<h2>We Deliver Top-Notch Solutions Built on Trust</h2>
+							<p>
+								We are committed to delivering the best solutions with a
+								foundation of trust and reliability. Our team utilizes the
+								latest technologies to ensure top performance across platforms,
+								including mobile, web, and TV.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-6 col-sm-3">
+								<div class="technology-item">
+									<i class="flaticon-android"></i>
+									<h3>Android</h3>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-6 col-sm-3">
+								<div class="technology-item">
+									<i class="flaticon-website"></i>
+									<h3>Web</h3>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-6 col-sm-3">
+								<div class="technology-item">
+									<i class="flaticon-apple"></i>
+									<h3>iOS</h3>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-6 col-sm-3">
+								<div class="technology-item">
+									<i class="flaticon-television"></i>
+									<h3>TV</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="technology-play-area">
+						<a href="https://www.youtube.com/watch?v=tUP5S4YdEJo"
+							class="play-btn popup-btn">
+							<i class="bx bx-play"></i>
 						</a>
-					   </div>
-						   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar Area -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Technology Area End -->
 
-        <!-- Search Overlay -->
-        <div class="search-overlay">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="search-layer"></div>
-                    <div class="search-layer"></div>
-                    <div class="search-layer"></div>
-                    
-                    <div class="search-close">
-                        <span class="search-close-line"></span>
-                        <span class="search-close-line"></span>
-                    </div>
-
-                    <div class="search-form">
-                        <form>
-                            <input type="text" class="input-search" placeholder="Search here...">
-                            <button type="submit"><i class='bx bx-search'></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Search Overlay -->
-
-<!-- Banner Five Area -->
-<div class="banner-five-area">
-	<div class="container-fluid">
-	    <div class="row align-items-center">
-		 <div class="col-lg-6">
-		     <div class="banner-five-content">
-			  <span>
-				<strong>ADVANCED TECHNOLOGY & INNOVATIVE IT SOLUTIONS</strong>
-			  </span>
-
-			  <h1>Transforming Your Business with <b>Cutting-Edge</b> Technology & Digital Innovation</h1>
-			  <p>
-			      At Vickins Technologies, we specialize in providing tailor-made IT solutions that empower businesses globally. From cloud computing and web development to IT consultancy, we deliver high-performance solutions to optimize your operations and drive growth.
-			  </p>
-			  <a href="/contact" class="default-btn btn-bg-two border-radius-50 ">Request A Free Consultation</a>
-		     </div>
-		 </div>
-
-		 <div class="col-lg-6">
-		     <div class="banner-five-img">
-			  <img src="assets/images/home-five-img.png" alt="Vickins Technologies Solutions">
-		     </div>
-		 </div>
-	    </div>
-	</div>
-   </div>
-   <!-- Banner Area Five End -->
-   
-
-<!-- Work Process Area -->
-<section class="work-process-area pt-100 pb-70">
+	<!-- Clients Area -->
+<section class="clients-area pt-100 pb-70">
 	<div class="container">
-	    <div class="section-title text-center">
-		 <span class="sp-color2">Our Working Process</span>
-		 <h2>How Our IT Solutions Drive Your Business Growth</h2>
-	    </div>
-   
-	    <div class="row pt-45">
-		 <div class="col-lg-3 col-sm-6">
-		     <div class="work-process-card-three">
-			  <div class="number-title">01.</div>
-			  <h3>Discovery</h3>
-			  <p>We start by understanding your unique business needs and challenges, ensuring that we tailor our solutions to your specific goals.</p>
-			  <i class="flaticon-project"></i>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-sm-6">
-		     <div class="work-process-card-three">
-			  <div class="number-title">02.</div>
-			  <h3>Planning</h3>
-			  <p>Based on the discovery phase, we plan the best approach using the latest technology to optimize your business operations.</p>
-			  <i class="flaticon-chip"></i>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-sm-6">
-		     <div class="work-process-card-three">
-			  <div class="number-title">03.</div>
-			  <h3>Execute</h3>
-			  <p>Our team of experts efficiently implements the solutions, ensuring smooth integration and minimal disruption to your operations.</p>
-			  <i class="flaticon-effective"></i>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-sm-6">
-		     <div class="work-process-card-three">
-			  <div class="number-title">04.</div>
-			  <h3>Deliver</h3>
-			  <p>We deliver high-quality results, ensuring that the solutions meet your expectations and drive measurable growth for your business.</p>
-			  <i class="flaticon-bullhorn"></i>
-		     </div>
-		 </div>
-	    </div>
+		<div class="section-title text-center">
+			<span class="sp-color2">Our Clients</span>
+			<h2>Trusted Across All Continents</h2>
+		</div>
+
+		<div class="clients-slider owl-carousel owl-theme pt-45" id="clients-slider">
+			<div class="clients-content">
+				<div class="content">
+					<i class='bx bxs-quote-alt-left'></i>
+					<h3>Kwame Osei</h3>
+					<span>Manager, Accra Enterprises</span>
+				</div>
+				<p>
+					"Working with this team has been a transformative experience. Their dedication and expertise have helped us achieve our goals with ease. Highly recommended!"
+				</p>
+			</div>
+
+			<div class="clients-content">
+				<div class="content">
+					<i class='bx bxs-quote-alt-left'></i>
+					<h3>Aisha Ndungu</h3>
+					<span>CEO, Nairobi Solutions</span>
+				</div>
+				<p>
+					"The professionalism and creativity displayed by this company are unmatched. They delivered beyond our expectations, and we couldn't be happier with the results."
+				</p>
+			</div>
+
+			<div class="clients-content">
+				<div class="content">
+					<i class='bx bxs-quote-alt-left'></i>
+					<h3>Thabo Khumalo</h3>
+					<span>Director, Durban Tech Hub</span>
+				</div>
+				<p>
+					"Exceptional service! The team was responsive, innovative, and committed to ensuring our project's success. I look forward to collaborating with them again."
+				</p>
+			</div>
+		</div>
+
+		<!-- Add a Review Section -->
+		<div class="add-review pt-50">
+			<div class="section-title text-center">
+				<h3>Add Your Review</h3>
+			</div>
+			<form id="review-form" class="review-form">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" id="name" class="form-control" placeholder="Your Name" required />
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="position" class="form-control" placeholder="Your Position (e.g., CEO, Manager)" required />
+					</div>
+					<div class="col-12">
+						<textarea id="review" class="form-control" rows="4" placeholder="Write your review here..." required></textarea>
+					</div>
+					<div class="col-12 text-center pt-3">
+						<button type="button" id="submit-review" class="btn btn-primary">Submit Review</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
-   </section>
-   <!-- Work Process Area End -->
-   
 
-<!-- About Area -->
-<div class="about-area about-bg2 pt-100 pb-70">
-	<div class="container-fluid">
-	    <div class="row align-items-center">
-		 <div class="col-lg-6">
-		     <div class="about-img-4">
-			  <img src="assets/images/about/about-img4.png" alt="About Us Image">
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-6">
-		     <div class="about-content-3 ml-20">
-			  <div class="section-title">
-			      <span class="sp-color2">About Vickins Technologies</span>
-			      <h2>Your Trusted Partner for Software Innovation</h2>
-			      <p>
-				   At Vickins Technologies, we specialize in providing cutting-edge software solutions and digital technologies. 
-				   With over 7 years of experience, we are committed to helping businesses drive success through innovative technology and expert consulting.
-			      </p>
-			  </div>
-			  <h3>We Have 7+ Years of Experience in Offering IT Solutions & Digital Technology Services</h3>
-			  <div class="all-skill-bar">
-			      <div class="skill-bar" data-percentage="90%">
-				   <h4 class="progress-title-holder clearfix">
-					<span class="progress-title">Analytics</span>
-					<span class="progress-number-wrapper">
-					    <span class="progress-number-mark">
-						 <span class="percent">90%</span>
-					    </span>
-					</span>
-				   </h4>
-				   <div class="progress-content-outter">
-					<div class="progress-content" style="width: 90%;"></div>
-				   </div>
-			      </div>
-   
-			      <div class="skill-bar mb-0" data-percentage="80%">
-				   <h4 class="progress-title-holder clearfix">
-					<span class="progress-title">Solutions</span>
-					<span class="progress-number-wrapper">
-					    <span class="progress-number-mark">
-						 <span class="percent">80%</span>
-					    </span>
-					</span>
-				   </h4>
-				   <div class="progress-content-outter">
-					<div class="progress-content" style="width: 80%;"></div>
-				   </div>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-	    </div>
+	<div class="client-circle">
+		<div class="client-circle-1">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-2">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-3">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-4">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-5">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-6">
+			<div class="circle"></div>
+		</div>
+		<div class="client-circle-7">
+			<div class="circle"></div>
+		</div>
 	</div>
-   </div>
-   <!-- About Area End -->
-   
+</section>
+<!-- Clients Area End -->
 
-<!-- Services Area -->
-<section class="services-area-four pt-100 pb-70">
-	<div class="container">
-	    <div class="row align-items-center">
-		 <div class="col-lg-4">
-		     <div class="services-left">
-			  <div class="section-title">
-			      <span class="sp-color2">Our Services</span>
-			      <h2>Looking for the Perfect IT Solution? We Provide Tailored IT Solutions</h2>
-			      <p class="margin-auto">
-				   At Vickins Technologies, we specialize in offering innovative IT solutions, ensuring that your business stays ahead of the curve. Our expertise spans across various domains including IT consulting, cloud computing, web development, and business reform.
-			      </p>
-			  </div>
-			  <a href="/services" class="default-btn btn-bg-two border-radius-50 text-center">View All Services</a>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-8">
-		     <div class="row">
-			  <div class="col-lg-6 col-sm-6">
-			      <div class="services-card services-card-color-bg">
-				   <i class="flaticon-consultant"></i>
-				   <h3><a href="/services">IT Consulting</a></h3>
-				   <p>Our IT consulting services guide you through complex IT decisions, offering customized solutions to improve your business operations and technology infrastructure.</p>
-				   <a href="/services" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
-			      </div>
-			  </div>
-   
-			  <div class="col-lg-6 col-sm-6">
-			      <div class="services-card services-card-color-bg">
-				   <i class="flaticon-consulting"></i>
-				   <h3><a href="/services">Cloud Computing</a></h3>
-				   <p>We provide scalable cloud computing solutions that enhance your business's flexibility and efficiency, allowing you to store and manage data seamlessly across multiple platforms.</p>
-				   <a href="/services" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
-			      </div>
-			  </div>
-   
-			  <div class="col-lg-6 col-sm-6">
-			      <div class="services-card services-card-color-bg">
-				   <i class="flaticon-web-development"></i>
-				   <h3><a href="/services">Web Development</a></h3>
-				   <p>Our expert web development team builds user-friendly, responsive, and feature-rich websites tailored to your business needs, ensuring optimal user experiences.</p>
-				   <a href="/services" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
-			      </div>
-			  </div>
-   
-			  <div class="col-lg-6 col-sm-6">
-			      <div class="services-card services-card-color-bg">
-				   <i class="flaticon-stats"></i>
-				   <h3><a href="/services">Business Reform</a></h3>
-				   <p>We assist in transforming your business strategies, optimizing workflows, and adopting best practices to enhance performance and drive long-term success.</p>
-				   <a href="/services" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-	    </div>
+<script>
+	// Add event listener for submitting a review
+	document.getElementById('submit-review').addEventListener('click', function () {
+		// Get input values
+		const name = document.getElementById('name').value;
+		const position = document.getElementById('position').value;
+		const review = document.getElementById('review').value;
+
+		// Validate inputs
+		if (name && position && review) {
+			// Create a new review element
+			const reviewElement = `
+				<div class="clients-content">
+					<div class="content">
+						<i class='bx bxs-quote-alt-left'></i>
+						<h3>${name}</h3>
+						<span>${position}</span>
+					</div>
+					<p>${review}</p>
+				</div>
+			`;
+
+			// Add the review to the clients slider
+			document.getElementById('clients-slider').innerHTML += reviewElement;
+
+			// Clear the form
+			document.getElementById('review-form').reset();
+
+			alert('Thank you for your review!');
+		} else {
+			alert('Please fill in all fields before submitting your review.');
+		}
+	});
+</script>
+
+
+
+	<!-- Footer Area Start -->
+	<footer class="footer-area footer-bg">
+		<div class="container">
+			<div class="footer-top pt-100 pb-70">
+				<div class="row">
+					<!-- About Us Section -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="/">
+									<img src="assets/images/logo2.png" alt="Company Logo"
+										style="width: 150px;">
+								</a>
+							</div>
+							<p>
+								Vickins Technologies provides innovative IT solutions to empower
+								businesses worldwide. From consultancy to development, we help
+								you grow and succeed in today’s digital age.
+							</p>
+
+						</div>
+					</div>
+
+					<!-- Services Section -->
+					<div class="col-lg-2 col-sm-6">
+						<div class="footer-widget">
+							<h3>Our Services</h3>
+							<ul class="footer-list">
+								<li><a href="/service"><i class='bx bx-chevron-right'></i> IT
+										Consulting</a></li>
+								<li><a href="/service"><i class='bx bx-chevron-right'></i>
+										Business Solutions</a></li>
+								<li><a href="/service"><i class='bx bx-chevron-right'></i> Web
+										Development</a></li>
+								<li><a href="/service"><i class='bx bx-chevron-right'></i> Cloud
+										Solutions</a></li>
+								<li><a href="/service"><i class='bx bx-chevron-right'></i> Data
+										Analytics</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Newsletter Section -->
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget">
+							<h3>Stay Updated</h3>
+							<p>Subscribe to our newsletter for the latest updates, innovations, and
+								trends in technology.</p>
+							<div class="newsletter-area">
+								<form class="newsletter-form" method="POST">
+									<input type="email" class="form-control"
+										placeholder="Your Email Address" name="EMAIL"
+										required>
+									<button class="subscribe-btn" type="submit">
+										<i class='bx bxs-paper-plane'></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright Area -->
+			<div class="copy-right-area">
+				<div class="copy-right-text text-center">
+					<p>
+						&copy;
+						<script>document.write(new Date().getFullYear())</script> Vickins
+						Technologies. All Rights Reserved. <br>
+						Designed by <a href="https://vickinstechnologies.com/" target="_blank">Vickins
+							Technologies</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Area End -->
+
+
+	<!-- Color Switch Button -->
+	<div class="switch-box">
+		<label id="switch" class="modern-switch">
+			<input type="checkbox" onchange="toggleTheme()" id="slider">
+			<span class="modern-slider"></span>
+		</label>
 	</div>
-   </section>
-   <!-- Services Area End -->
-   
-<!-- Clients Area -->
-<section class="clients-area-three pt-100">
-	<div class="container">
-	    <div class="section-title text-center">
-		 <span class="sp-color2">Our Clients</span>
-		 <h2>What Our Clients Say</h2>
-	    </div>
-   
-	    <div class="clients-slider-two owl-carousel owl-theme pt-45">
-		 <div class="clients-slider-item">
-		     <div class="row align-items-center">
-			  <div class="col-lg-6">
-			      <div class="clients-slider-img">
-				   <img src="assets/images/clients-img/client-user-img1.png" alt="Client Image">
-				   <div class="clients-slider-circle"></div>
-			      </div>
-			  </div>
-   
-			  <div class="col-lg-6">
-			      <div class="clients-slider-content">
-				   <i class="bx bxs-quote-alt-left"></i>
-				   <p>
-					"Vickins Technologies has been an absolute game changer for our business. Their expertise in IT consulting and web development has transformed the way we work and interact with our customers. We couldn't be happier with the results!"
-				   </p>
-				   <h3>Jonthon Martin</h3>
-				   <span>App Developer</span>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-   
-		 <div class="clients-slider-item">
-		     <div class="row align-items-center">
-			  <div class="col-lg-6">
-			      <div class="clients-slider-img">
-				   <img src="assets/images/clients-img/client-user-img2.png" alt="Client Image">
-				   <div class="clients-slider-circle"></div>
-			      </div>
-			  </div>
-   
-			  <div class="col-lg-6">
-			      <div class="clients-slider-content">
-				   <i class="bx bxs-quote-alt-left"></i>
-				   <p>
-					"Working with Vickins Technologies has been an incredible experience. Their team is highly professional and always delivers top-notch solutions. Their expertise in cloud computing has helped us scale our operations with ease."
-				   </p>
-				   <h3>Alin Decros</h3>
-				   <span>Graphic Designer</span>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-	    </div>
-	</div>
-   </section>
-   <!-- Clients Area End -->
+	<!-- Color Switch Button End -->
+	<style>
+		/* Modern Switch Styles */
+		.modern-switch {
+			position: relative;
+			display: inline-block;
+			width: 50px;
+			height: 24px;
+		}
 
-<!-- Counter Area -->
-<div class="counter-area pt-100 pb-70">
-	<div class="container">
-	    <div class="section-title text-center">
-		 <span class="sp-color2">Our Success Numbers</span>
-		 <h2>Check Out Our Business Growth and Achievements</h2>
-		 <p>
-		     We are proud of the milestones we've achieved in the industry. From successful project completions to innovative IT consulting, our numbers reflect the impact we've made.
-		 </p>
-	    </div>
-	    
-	    <div class="row pt-45">
-		 <div class="col-lg-3 col-6 col-md-3">
-		     <div class="counter-another-content">
-			  <i class="flaticon-web-development"></i>
-			  <h3>26+</h3>
-			  <span>Delivered Projects</span>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-6 col-md-3">
-		     <div class="counter-another-content">
-			  <i class="flaticon-consulting-1"></i>
-			  <h3>105+</h3>
-			  <span>IT Consulting Sessions</span>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-6 col-md-3">
-		     <div class="counter-another-content">
-			  <i class="flaticon-startup"></i>
-			  <h3>35+</h3>
-			  <span>Businesses Launched</span>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-3 col-6 col-md-3">
-		     <div class="counter-another-content">
-			  <i class="flaticon-tick"></i>
-			  <h3>26+</h3>
-			  <span>Projects Completed</span>
-		     </div>
-		 </div>
-	    </div>
-	</div>
-   
-	<div class="counter-shape">
-	    <div class="shape1">
-		 <img src="assets/images/shape/shape1.png" alt="Decorative Shape 1">
-	    </div>
-	    <div class="shape2">
-		 <img src="assets/images/shape/shape2.png" alt="Decorative Shape 2">
-	    </div>
-	</div>
-   </div>
-   <!-- Counter Area End -->
-   
+		.modern-switch input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
 
-        <!-- Case Study Area -->
-        <div class="case-study-area-two pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="sp-color2">Case Study</span>
-                    <h2>Introduce Our Projects and Check Recent Work </h2>
-                </div>
+		.modern-slider {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #ccc;
+			border-radius: 24px;
+			transition: 0.4s;
+		}
 
-                <div class="row justify-content-center pt-45">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="/case">
-                            <a href="/case">
-                                <img src="assets/images/case-study/case-study1.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="/case">Business Solution</a></h3>
-                                <ul>
-                                    <li><a href="/case">Business</a></li>
-                                    <li><a href="/case">Planing</a> </li>
-                                </ul>
-                                <a href="/case" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
+		.modern-slider::before {
+			position: absolute;
+			content: "";
+			height: 18px;
+			width: 18px;
+			left: 3px;
+			bottom: 3px;
+			background-color: white;
+			border-radius: 50%;
+			transition: 0.4s;
+		}
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="case-study-item">
-                            <a href="/case">
-                                <img src="assets/images/case-study/case-study2.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="/case">Business Solution</a></h3>
-                                <ul>
-                                    <li><a href="/case">Business</a></li>
-                                    <li><a href="/case">Planing</a> </li>
-                                </ul>
-                                <a href="/case" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
+		input:checked+.modern-slider {
+			background-color: #0071dc;
+		}
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="case-study-item">
-                            <a href="/case">
-                                <img src="assets/images/case-study/case-study3.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="/case">Business Solution</a></h3>
-                                <ul>
-                                    <li><a href="/case">Business</a></li>
-                                    <li><a href="/case">Planing</a> </li>
-                                </ul>
-                                <a href="/case" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Case Study Area End -->
+		input:checked+.modern-slider::before {
+			transform: translateX(26px);
+		}
+	</style>
 
-<!-- Technology Area -->
-<section class="technology-area-four pt-100 pb-70">
-	<div class="container">
-	    <div class="row align-items-center">
-		 <div class="col-lg-6">
-		     <div class="technology-right">
-			  <div class="section-title">
-			      <span class="sp-color2">Technology Index</span>
-			      <h2>We Deliver Top-Notch Solutions Built on Trust</h2>
-			      <p>
-				   We are committed to delivering the best solutions with a foundation of trust and reliability. Our team utilizes the latest technologies to ensure top performance across platforms, including mobile, web, and TV.
-			      </p>
-			  </div>
-			  <div class="row">
-			      <div class="col-lg-3 col-6 col-sm-3">
-				   <div class="technology-item">
-					<i class="flaticon-android"></i>
-					<h3>Android</h3>
-				   </div>
-			      </div>
-   
-			      <div class="col-lg-3 col-6 col-sm-3">
-				   <div class="technology-item">
-					<i class="flaticon-website"></i>
-					<h3>Web</h3>
-				   </div>
-			      </div>
-   
-			      <div class="col-lg-3 col-6 col-sm-3">
-				   <div class="technology-item">
-					<i class="flaticon-apple"></i>
-					<h3>iOS</h3>
-				   </div>
-			      </div>
-   
-			      <div class="col-lg-3 col-6 col-sm-3">
-				   <div class="technology-item">
-					<i class="flaticon-television"></i>
-					<h3>TV</h3>
-				   </div>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-   
-		 <div class="col-lg-6">
-		     <div class="technology-play-area">
-			  <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-btn popup-btn">
-			      <i class="bx bx-play"></i>
-			  </a>
-		     </div>
-		 </div>
-	    </div>
-	</div>
-   </section>
-   <!-- Technology Area End -->
-   
+	<!-- Jquery Min JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- Bootstrap Bundle Min JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Owl Carousel Min JS -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup Min JS -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Nice Select Min JS -->
+	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<!-- Wow Min JS -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- Meanmenu JS -->
+	<script src="assets/js/meanmenu.js"></script>
+	<!-- Ajaxchimp Min JS -->
+	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+	<!-- Form Validator Min JS -->
+	<script src="assets/js/form-validator.min.js"></script>
+	<!-- Contact Form JS -->
+	<script src="assets/js/contact-form-script.js"></script>
+	<!-- Custom JS -->
+	<script src="assets/js/custom.js"></script>
 
-<!-- Footer Area Start -->
-<footer class="footer-area footer-bg">
-	<div class="container">
-	    <div class="footer-top pt-100 pb-70">
-		 <div class="row">
-		     <!-- About Us Section -->
-		     <div class="col-lg-4 col-sm-6">
-			  <div class="footer-widget">
-			      <div class="footer-logo">
-				   <a href="index.html">
-					<img src="assets/images/logo2.png" alt="Company Logo" style="width: 150px;">
-				   </a>
-			      </div>
-			      <p>
-				   Vickins Technologies provides innovative IT solutions to empower businesses worldwide. From consultancy to development, we help you grow and succeed in today’s digital age.
-			      </p>
-			      
-			  </div>
-		     </div>
-   
-		     <!-- Services Section -->
-		     <div class="col-lg-2 col-sm-6">
-			  <div class="footer-widget">
-			      <h3>Our Services</h3>
-			      <ul class="footer-list">
-				   <li><a href="/service"><i class='bx bx-chevron-right'></i> IT Consulting</a></li>
-				   <li><a href="/service"><i class='bx bx-chevron-right'></i> Business Solutions</a></li>
-				   <li><a href="/service"><i class='bx bx-chevron-right'></i> Web Development</a></li>
-				   <li><a href="/service"><i class='bx bx-chevron-right'></i> Cloud Solutions</a></li>
-				   <li><a href="/service"><i class='bx bx-chevron-right'></i> Data Analytics</a></li>
-			      </ul>
-			  </div>
-		     </div>
-   
-   
-		     <!-- Newsletter Section -->
-		     <div class="col-lg-3 col-sm-6">
-			  <div class="footer-widget">
-			      <h3>Stay Updated</h3>
-			      <p>Subscribe to our newsletter for the latest updates, innovations, and trends in technology.</p>
-			      <div class="newsletter-area">
-				   <form class="newsletter-form" method="POST">
-					<input type="email" class="form-control" placeholder="Your Email Address" name="EMAIL" required>
-					<button class="subscribe-btn" type="submit">
-					    <i class='bx bxs-paper-plane'></i>
-					</button>
-				   </form>
-			      </div>
-			  </div>
-		     </div>
-		 </div>
-	    </div>
-   
-	    <!-- Copyright Area -->
-	    <div class="copy-right-area">
-		 <div class="copy-right-text text-center">
-		     <p>
-			  &copy; <script>document.write(new Date().getFullYear())</script> Vickins Technologies. All Rights Reserved. <br>
-			  Designed by <a href="https://vickinstechnologies.com/" target="_blank">Vickins Technologies</a>
-		     </p>
-		 </div>
-	    </div>
-	</div>
-   </footer>
-   <!-- Footer Area End -->
-   
-
-        <!-- Color Switch Button -->
-        <div class="switch-box">
-            <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <!-- Color Switch Button End -->
-
-        <!-- Jquery Min JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- Bootstrap Bundle Min JS -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Owl Carousel Min JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Magnific Popup Min JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Nice Select Min JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Wow Min JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Meanmenu JS -->
-        <script src="assets/js/meanmenu.js"></script>
-        <!-- Ajaxchimp Min JS -->
-        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-        <!-- Form Validator Min JS -->
-        <script src="assets/js/form-validator.min.js"></script>
-        <!-- Contact Form JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
+</body>
 
 </html>
