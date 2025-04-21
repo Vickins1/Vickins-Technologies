@@ -40,8 +40,8 @@ app.get("/consultant", (req, res) => {
       res.render("consultant", { title: "Vickins Tech" });
     });
 
-app.get("/apps", (req, res) => {
-      res.render("apps", { title: "Vickins Tech - About" });
+app.get("/pricing", (req, res) => {
+      res.render("pricing", { title: "Vickins Tech - Pricing" });
     });
 
 app.get("/cloud", (req, res) => {

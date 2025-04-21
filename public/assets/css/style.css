@@ -1249,45 +1249,83 @@ Main Banner Area
   z-index: 1;
   margin-bottom: 50px;
 }
-
+/* Banner Five Area Styling */
 .banner-five-area {
   background-color: #d5e5f4;
   position: relative;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .banner-five-content {
-  max-width: 560px;
+  max-width: 600px;
   margin-left: auto;
 }
+
 .banner-five-content span {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: #0071dc;
+  letter-spacing: 0.5px;
   border-radius: 50px;
   display: inline-block;
-  margin-bottom: 15px;
-}
-.banner-five-content h1 {
-  font-size: 52px;
-  font-weight: 600;
-  line-height: 1.2;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
+
+.banner-five-content h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
 .banner-five-content h1 b {
-  font-weight: 600;
+  font-weight: 700;
   color: #0071dc;
 }
+
 .banner-five-content p {
   font-size: 17px;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 40px;
+  line-height: 1.7;
 }
 
 .banner-five-img {
   animation: moveBounce 9s infinite ease-in-out;
 }
 
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background-color: #0071dc;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+.social-icon:hover {
+  background-color: #005bb5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 /*==================================
 Main Banner Area End
 =================================*/
