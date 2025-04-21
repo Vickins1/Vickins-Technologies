@@ -226,6 +226,15 @@
         </div>
         <!-- Inner Banner End -->
 
+        <% if (success) { %>
+            <div class="alert alert-success text-center"><%= success %></div>
+          <% } %>
+          <% if (error) { %>
+            <div class="alert alert-danger text-center"><%= error %></div>
+          <% } %>
+          
+          
+
 <!-- Contact Form Area -->
 <div class="contact-form-area pt-100 pb-70">
        <div class="container">
@@ -272,7 +281,7 @@
    
                <div class="col-lg-8">
                 <div class="contact-form">
-                    <form id="contactForm" action="#" method="POST">
+                    <form id="contactForm" action="/api/contact" method="POST">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -300,13 +309,14 @@
             
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="plan">Select Plan <span>*</span></label>
+                                    <label for="plan">Select Service <span>*</span></label>
                                     <select name="plan" id="plan" class="form-control" required data-error="Please select a plan">
-                                        <option value="">Choose a Service</option>
-                                        <option value="static-website">Static Website (KES 80,000+)</option>
-                                        <option value="e-commerce">E-commerce (KES 200,000+)</option>
-                                        <option value="mobile-app">Mobile App (KES 300,000+)</option>
-                                        <option value="dynamic-website">Dynamic Website (KES 100,000+)</option>
+                                        <option value="">Choose a Plan</option>
+                                        <option value="static-website">Static Website</option>
+                                        <option value="e-commerce">E-commerce</option>
+                                        <option value="mobile-app">Mobile App</option>
+                                        <option value="dynamic-website">Dynamic Website</option>
+                                        <option value="graphic-design">Graphic Design</option>
                                     </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -330,8 +340,9 @@
                             </div>
             
                             <div class="col-lg-12 text-center">
-                                <button type="submit" class="default-btn btn-bg-two border-radius-50">
+                                <button type="submit" class="default-btn btn-bg-two border-radius-50" id="submitButton">
                                     Send Message <i class='bx bx-chevron-right'></i>
+                                    <span class="loading" style="display: none;">Sending...</span>
                                 </button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
@@ -343,6 +354,8 @@
            </div>
        </div>
    </div>
+
+
    <!-- Contact Form Area End -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -355,6 +368,100 @@
     }
 });
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const msgSubmit = document.getElementById('msgSubmit');
+
+    // Client-side validation
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Prevent default submission to handle via JavaScript
+
+        // Reset previous error messages
+        document.querySelectorAll('.help-block.with-errors').forEach((el) => {
+            el.textContent = '';
+        });
+        msgSubmit.classList.add('hidden');
+        msgSubmit.textContent = '';
+
+        // Validate inputs
+        let isValid = true;
+        const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+        inputs.forEach((input) => {
+            if (!input.value.trim()) {
+                const errorDiv = input.parentElement.querySelector('.help-block.with-errors');
+                errorDiv.textContent = input.dataset.error || 'This field is required';
+                isValid = false;
+            }
+        });
+
+        // Validate email format
+        const emailInput = document.getElementById('email');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailInput.value && !emailRegex.test(emailInput.value)) {
+            const errorDiv = emailInput.parentElement.querySelector('.help-block.with-errors');
+            errorDiv.textContent = 'Please enter a valid email address';
+            isValid = false;
+        }
+
+        if (!isValid) {
+            msgSubmit.textContent = 'Please fill out all required fields correctly.';
+            msgSubmit.classList.remove('hidden');
+            return;
+        }
+
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.querySelector('.bx-chevron-right').style.display = 'none';
+        submitButton.querySelector('.loading').style.display = 'inline';
+
+        try {
+            const formData = new FormData(form);
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                body: formData,
+            });
+
+            if (response.redirected) {
+                // Follow the redirect (e.g., to /success.html or /error.html)
+                window.location.href = response.url;
+            } else {
+                const result = await response.json();
+                msgSubmit.textContent = result.message || 'Message sent successfully!';
+                msgSubmit.classList.remove('hidden');
+                form.reset();
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            msgSubmit.textContent = 'Failed to send message. Please try again.';
+            msgSubmit.classList.remove('hidden');
+        } finally {
+            // Reset button state
+            submitButton.disabled = false;
+            submitButton.querySelector('.bx-chevron-right').style.display = 'inline';
+            submitButton.querySelector('.loading').style.display = 'none';
+        }
+    });
+});
+</script>
+
+<style>
+    .hidden {
+    display: none;
+}
+.default-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+#msgSubmit {
+    color: #dc3545; /* Red for errors */
+}
+#msgSubmit.success {
+    color: #28a745; /* Green for success */
+}
+</style>
    
 <!-- Footer Area Start -->
 <footer class="footer-area footer-bg">
