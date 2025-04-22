@@ -1439,10 +1439,11 @@ Inner Banner
   position: relative;
   z-index: 1;
   background-color: #070b3b;
+  height: 150px;
 }
 .inner-banner .inner-title {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
   z-index: 1;
 }

@@ -40,29 +40,57 @@ app.post("/api/contact", upload.none(), async (req, res) => {
   try {
     const { name, email, phone_number, plan, message } = req.body;
 
-    if (!name || !email || !phone_number || !plan || !message) {
-      return res.redirect("/contact?error=All fields are required");
+    // Ensure plan is an array (handles both single and multiple selections)
+    const selectedPlans = Array.isArray(plan) ? plan : plan ? [plan] : [];
+
+    // Validate all required fields
+    if (!name || !email || !phone_number || selectedPlans.length === 0 || !message) {
+      return res.redirect("/contact?error=All fields are required, including at least one service");
     }
 
+    // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return res.redirect("/contact?error=Invalid email format");
     }
 
+    // Validate plan values (optional, to ensure only valid plans are submitted)
+    const validPlans = [
+      "e-commerce",
+      "pos-systems",
+      "static-website",
+      "api-automation",
+      "blockchain-crypto",
+      "dynamic-website",
+      "custom-software",
+      "mobile-app",
+      "graphic-design",
+      "consultancy",
+    ];
+    const invalidPlans = selectedPlans.filter((p) => !validPlans.includes(p));
+    if (invalidPlans.length > 0) {
+      return res.redirect("/contact?error=Invalid service selected");
+    }
+
+    // Format plans for email
+    const plansString = selectedPlans.join(", ");
+
+    // Email configuration
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.RECEIVER_EMAIL,
-      subject: `New Contact Form Submission - ${plan}`,
+      subject: `New Contact Form Submission - ${selectedPlans[0] || "Multiple Services"}`,
       html: `
         <h3>New Contact Form Submission</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phone_number}</p>
-        <p><strong>Selected Plan:</strong> ${plan}</p>
+        <p><strong>Selected Service:</strong> ${plansString}</p>
         <p><strong>Message:</strong> ${message}</p>
       `,
     };
 
+    // Send email
     await transporter.sendMail(mailOptions);
     return res.redirect("/contact?success=Message sent successfully");
   } catch (error) {

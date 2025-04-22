@@ -237,49 +237,46 @@
 
 <!-- Contact Form Area -->
 <div class="contact-form-area pt-100 pb-70">
-       <div class="container">
-           <div class="section-title text-center">
-               <h2>Get In Touch With Us</h2>
-           </div>
-   
-           <div class="row pt-45">
-               <div class="col-lg-4">
-                   <div class="contact-info mr-20">
-                       <span>Contact Information</span>
-                       <h2>We'd Love to Hear From You</h2>
-                       <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help and look forward to connecting with you!</p>
-                       <ul>
-                           <li>
-                               <div class="content">
-                                   <i class='bx bx-phone-call'></i>
-                                   <h3>Phone Number</h3> 
-                                   <a href="tel:0794501005">+254 794 501 005</a>
-                               </div>
-                           </li>
-   
-                           <li>
-                               <div class="content">
-                                   <i class='bx bxs-map'></i>
-                                   <h3>Address</h3> 
-                                   <span>Nairobi, Kenya</span>
-                               </div>
-                           </li>
-   
-                           <li>
-                               <div class="content">
-                                   <i class='bx bx-message'></i>
-                                   <h3>Email Us</h3>
-                                   <!-- Email obfuscation -->
-                                   <a href="javascript:void(0);" onclick="window.location.href = 'mailto:' + 'vickinstechnologies' + '@' + 'gmail' + '.' + 'com';">
-                                       vickinstechnologies@gmail.com
-                                   </a>
-                               </div>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
-   
-               <div class="col-lg-8">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Get In Touch With Us</h2>
+        </div>
+
+        <div class="row pt-45">
+            <div class="col-lg-4">
+                <div class="contact-info mr-20">
+                    <span>Contact Information</span>
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help and look forward to connecting with you!</p>
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <i class='bx bx-phone-call'></i>
+                                <h3>Phone Number</h3>
+                                <a href="tel:0794501005">+254 794 501 005</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <i class='bx bxs-map'></i>
+                                <h3>Address</h3>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <i class='bx bx-message'></i>
+                                <h3>Email Us</h3>
+                                <a href="javascript:void(0);" onclick="window.location.href = 'mailto:' + 'vickinstechnologies' + '@' + 'gmail' + '.' + 'com';">
+                                    vickinstechnologies@gmail.com
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
                 <div class="contact-form">
                     <form id="contactForm" action="/api/contact" method="POST">
                         <div class="row">
@@ -290,7 +287,6 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-            
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="email">Your Email <span>*</span></label>
@@ -298,7 +294,6 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-            
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="phone_number">Phone Number <span>*</span></label>
@@ -306,22 +301,56 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-            
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label for="plan">Select Service <span>*</span></label>
-                                    <select name="plan" id="plan" class="form-control" required data-error="Please select a plan">
-                                        <option value="">Choose a Plan</option>
-                                        <option value="static-website">Static Website</option>
-                                        <option value="e-commerce">E-commerce</option>
-                                        <option value="mobile-app">Mobile App</option>
-                                        <option value="dynamic-website">Dynamic Website</option>
-                                        <option value="graphic-design">Graphic Design</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
+                                    <label>Select Service(s) <span>*</span></label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-ecommerce" value="e-commerce">
+                                            <label for="plan-ecommerce" class="checkbox-label">E-commerce</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-pos" value="pos-systems">
+                                            <label for="plan-pos" class="checkbox-label">POS Systems</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-static" value="static-website">
+                                            <label for="plan-static" class="checkbox-label">Static Website</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-api" value="api-automation">
+                                            <label for="plan-api" class="checkbox-label">API & Automation</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-blockchain" value="blockchain-crypto">
+                                            <label for="plan-blockchain" class="checkbox-label">Blockchain & Crypto</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-dynamic" value="dynamic-website">
+                                            <label for="plan-dynamic" class="checkbox-label">Dynamic Website</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-software" value="custom-software">
+                                            <label for="plan-software" class="checkbox-label">Custom Software</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-mobile" value="mobile-app">
+                                            <label for="plan-mobile" class="checkbox-label">Mobile App</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" name="plan[]" id="plan-graphic" value="graphic-design">
+                                                <label for="plan-graphic" class="checkbox-label">Graphic Design</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="plan[]" id="plan-consultancy" value="consultancy">
+                                            <label for="plan-consultancy" class="checkbox-label">Consultancy</label>
+                                        </div>
+                                    </div>
+                                    <div class="help-block with-errors" id="plan-error"></div>
                                 </div>
                             </div>
-            
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label for="message">Your Message <span>*</span></label>
@@ -329,7 +358,6 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-            
                             <div class="col-lg-12">
                                 <div class="agree-label">
                                     <input type="checkbox" id="chb1" required>
@@ -338,7 +366,6 @@
                                     </label>
                                 </div>
                             </div>
-            
                             <div class="col-lg-12 text-center">
                                 <button type="submit" class="default-btn btn-bg-two border-radius-50" id="submitButton">
                                     Send Message <i class='bx bx-chevron-right'></i>
@@ -351,21 +378,138 @@
                     </form>
                 </div>
             </div>
-           </div>
-       </div>
-   </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Form Area End -->
 
+<style>
+/* CSS Variables for Checkbox Styling (Light and Dark Modes) */
+:root {
+    --accent-color: #0071dc;
+    --accent-dark: #005bb5;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --bg-checkbox: #ffffff;
+    --border-checkbox: #cccccc;
+}
 
-   <!-- Contact Form Area End -->
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-color: #4da8ff;
+        --accent-dark: #3b82f6;
+        --text-primary: #e0e0e0;
+        --text-secondary: #a0a0a0;
+        --bg-checkbox: #2c2c2c;
+        --border-checkbox: #555555;
+    }
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.checkbox-item input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: var(--bg-checkbox);
+    border: 2px solid var(--border-checkbox);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox-item input[type="checkbox"]:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.checkbox-item input[type="checkbox"]:checked::after {
+    content: '\2713';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-item input[type="checkbox"]:hover,
+.checkbox-item input[type="checkbox"]:focus {
+    border-color: var(--accent-dark);
+    outline: none;
+}
+
+.checkbox-label:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .checkbox-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    .checkbox-label {
+        font-size: 12px;
+    }
+    .checkbox-item input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+}
+</style>
+
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    // Pre-select checkbox based on URL parameter
     const urlParams = new URLSearchParams(window.location.search);
     const selectedPlan = urlParams.get('plan');
-    const planSelect = document.getElementById('plan');
-
-    if (selectedPlan && planSelect) {
-        planSelect.value = selectedPlan;
+    if (selectedPlan) {
+        const checkbox = document.querySelector(`input[name="plan[]"][value="${selectedPlan}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
     }
+
+    // Client-side validation for at least one checkbox
+    const form = document.getElementById('contactForm');
+    const planError = document.getElementById('plan-error');
+
+    form.addEventListener('submit', (event) => {
+        const checkboxes = document.querySelectorAll('input[name="plan[]"]:checked');
+        if (checkboxes.length === 0) {
+            event.preventDefault();
+            planError.textContent = 'Please select at least one service';
+        } else {
+            planError.textContent = '';
+        }
+    });
 });
 </script>
 
