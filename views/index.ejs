@@ -857,61 +857,99 @@
 	<!-- Footer Area End -->
 
 
-	<!-- Color Switch Button -->
-	<div class="switch-box">
-		<label id="switch" class="modern-switch">
-			<input type="checkbox" onchange="toggleTheme()" id="slider">
-			<span class="modern-slider"></span>
-		</label>
-	</div>
-	<!-- Color Switch Button End -->
-	<style>
-		/* Modern Switch Styles */
-		.modern-switch {
-			position: relative;
-			display: inline-block;
-			width: 50px;
-			height: 24px;
-		}
+<!-- Color Switch Button -->
+<div class="switch-box">
+	<label id="switch" class="modern-switch">
+		<input type="checkbox" onchange="toggleTheme()" id="slider">
+		<span class="modern-slider">
+			<span class="slider-icon sun">🌞</span>
+			<span class="slider-icon moon">🌙</span>
+		</span>
+	</label>
+</div>
 
-		.modern-switch input {
-			opacity: 0;
-			width: 0;
-			height: 0;
-		}
+<style>
+	/* Modern Switch Styles */
+	.modern-switch {
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 30px;
+	}
 
-		.modern-slider {
-			position: absolute;
-			cursor: pointer;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: #ccc;
-			border-radius: 24px;
-			transition: 0.4s;
-		}
+	.modern-switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
 
-		.modern-slider::before {
-			position: absolute;
-			content: "";
-			height: 18px;
-			width: 18px;
-			left: 3px;
-			bottom: 3px;
-			background-color: white;
-			border-radius: 50%;
-			transition: 0.4s;
-		}
+	.modern-slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, #d1d1d1, #ccc);
+		border-radius: 30px;
+		transition: background 0.4s ease-in-out, box-shadow 0.3s;
+		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 6px;
+		font-size: 14px;
+		color: #333;
+	}
 
-		input:checked+.modern-slider {
-			background-color: #0071dc;
-		}
+	.modern-slider::before {
+		position: absolute;
+		content: "";
+		height: 24px;
+		width: 24px;
+		left: 3px;
+		bottom: 3px;
+		background: linear-gradient(145deg, #ffffff, #e6e6e6);
+		border-radius: 50%;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		transition: transform 0.4s ease-in-out, background 0.3s;
+	}
 
-		input:checked+.modern-slider::before {
-			transform: translateX(26px);
-		}
-	</style>
+	.slider-icon {
+		z-index: 1;
+		pointer-events: none;
+		transition: opacity 0.3s;
+	}
+
+	.sun {
+		opacity: 1;
+	}
+
+	.moon {
+		opacity: 0;
+	}
+
+	input:checked + .modern-slider {
+		background: linear-gradient(135deg, #0071dc, #005bb5);
+		box-shadow: 0 0 10px #0071dc88;
+		color: #fff;
+	}
+
+	input:checked + .modern-slider::before {
+		transform: translateX(30px);
+		background: linear-gradient(145deg, #ffffff, #cde3ff);
+	}
+
+	input:checked + .modern-slider .sun {
+		opacity: 0;
+	}
+
+	input:checked + .modern-slider .moon {
+		opacity: 1;
+	}
+</style>
+
+
 
 	<!-- Jquery Min JS -->
 	<script src="assets/js/jquery.min.js"></script>
