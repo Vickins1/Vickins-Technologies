@@ -310,44 +310,136 @@
 <!-- Banner Five Area -->
 <div class="banner-five-area">
 	<div class="container-fluid">
-	    <div class="row align-items-center">
-		 <div class="col-lg-6">
-		     <div class="banner-five-content">
-			  <span>
-			      <strong>LEADING IT SOLUTIONS FOR GLOBAL IMPACT</strong>
-			  </span>
-			  <h1 style="font-size: 45px;">Elevate Your Business with <b>Innovative</b> Digital Solutions</h1>
-			  <p>
-			      Vickins Technologies delivers tailored IT solutions, including mobile and web app development, cloud architecture, enterprise software, cybersecurity, IT consultancy, data analytics, AI, and IoT, empowering businesses to optimize operations and drive growth.
-			  </p>
-			  <div class="social-links">
-			      <a href="https://github.com/vickins1" target="_blank" class="social-icon" title="GitHub">
-				   <i class="fab fa-github"></i>
-			      </a>
-			      <a href="https://x.com/vickins_tech" target="_blank" class="social-icon" title="X">
-				   <i class="fab fa-x-twitter"></i>
-			      </a>
-			      <a href="https://linkedin.com/company/vickins-technologies" target="_blank" class="social-icon" title="LinkedIn">
-				   <i class="fab fa-linkedin-in"></i>
-			      </a>
-			      <a href="https://facebook.com/profile.php?id=61569016955138" target="_blank" class="social-icon" title="Facebook">
-				   <i class="fab fa-facebook-f"></i>
-			      </a>
-			      <a href="https://instagram.com/vickins.technologies" target="_blank" class="social-icon" title="Instagram">
-				   <i class="fab fa-instagram"></i>
-			      </a>
-			  </div>
+	  <div class="row align-items-center">
+	    
+	    <!-- Left Column -->
+	    <div class="col-lg-6">
+	      <div class="banner-five-content">
+		 <span><strong>LEADING IT SOLUTIONS FOR GLOBAL IMPACT</strong></span>
+		 <h1 style="font-size: 45px;">
+		   Elevate Your Business with <b>Innovative</b> Digital Solutions
+		 </h1>
+		 <p>
+		   Vickins Technologies delivers tailored IT solutions, including mobile and web app
+		   development, cloud architecture, enterprise software, cybersecurity, IT consultancy,
+		   data analytics, AI, and IoT, empowering businesses to optimize operations and drive growth.
+		 </p>
+		 
+		 <!-- Counters (inside banner, above social links) -->
+		 <div class="row counter-row pt-4 pb-2">
+		   <div class="col-6 col-md-3 text-center">
+		     <div class="counter-another-content">
+			<i class="flaticon-web-development"></i>
+			<h3 class="counter" data-target="16">0</h3>
+			<small>Projects Delivered</small>
 		     </div>
-		 </div>
-		 <div class="col-lg-6">
-		     <div class="banner-five-img">
-			  <img src="assets/images/home-five-img.png" alt="Vickins Technologies Solutions">
+		   </div>
+		   <div class="col-6 col-md-3 text-center">
+		     <div class="counter-another-content">
+			<i class="flaticon-consulting-1"></i>
+			<h3 class="counter" data-target="35">0</h3>
+			<small>IT Consulting Sessions</small>
 		     </div>
+		   </div>
+		   <div class="col-6 col-md-3 text-center">
+		     <div class="counter-another-content">
+			<i class="flaticon-startup"></i>
+			<h3 class="counter" data-target="15">0</h3>
+			<small>Businesses Launched</small>
+		     </div>
+		   </div>
+		   <div class="col-6 col-md-3 text-center">
+		     <div class="counter-another-content">
+			<i class="flaticon-tick"></i>
+			<h3 class="counter" data-target="20">0</h3>
+			<small>Projects Completed</small>
+		     </div>
+		   </div>
 		 </div>
+		 <!-- /Counters -->
+		 
+		 <!-- Social Links -->
+		 <div class="social-links mt-3">
+		   <a href="https://github.com/vickins1" target="_blank" class="social-icon" title="GitHub">
+		     <i class="fab fa-github"></i>
+		   </a>
+		   <a href="https://x.com/vickins_tech" target="_blank" class="social-icon" title="X">
+		     <i class="fab fa-x-twitter"></i>
+		   </a>
+		   <a href="https://linkedin.com/company/vickins-technologies" target="_blank" class="social-icon" title="LinkedIn">
+		     <i class="fab fa-linkedin-in"></i>
+		   </a>
+		   <a href="https://facebook.com/profile.php?id=61569016955138" target="_blank" class="social-icon" title="Facebook">
+		     <i class="fab fa-facebook-f"></i>
+		   </a>
+		   <a href="https://instagram.com/vickins.technologies" target="_blank" class="social-icon" title="Instagram">
+		     <i class="fab fa-instagram"></i>
+		   </a>
+		 </div>
+	      </div>
 	    </div>
+	    <!-- /Left Column -->
+	    
+	    <!-- Right Column -->
+	    <div class="col-lg-6">
+	      <div class="banner-five-img">
+		 <img src="assets/images/home-five-img.png" alt="Vickins Technologies Solutions">
+	      </div>
+	    </div>
+	    <!-- /Right Column -->
+	    
+	  </div>
 	</div>
-   </div>
-   <!-- Banner Area Five End -->
+     </div>
+     <!-- Banner Area Five End -->
+     <style>
+	.counter-another-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-another-content i {
+  font-size: 3.75rem;   /* ~28px */
+  color: #0071dc;
+  margin-bottom: 0.5rem;
+}
+.counter-another-content h3 {
+  font-size: 2rem;      /* 32px */
+  color: #0071dc;
+  margin: 0.25rem 0;
+}
+
+
+     </style>
+   <script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const counters = document.querySelectorAll(".counter");
+
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const counter = entry.target;
+					const target = +counter.getAttribute("data-target");
+					const speed = 300;
+					const update = () => {
+						let current = +counter.innerText;
+						const increment = Math.ceil(target / speed);
+						if (current < target) {
+							counter.innerText = current + increment;
+							setTimeout(update, 30);
+						} else {
+							counter.innerText = target + "+";
+						}
+					};
+					update();
+					observer.unobserve(counter);
+				}
+			});
+		}, { threshold: 0.4 });
+
+		counters.forEach(counter => observer.observe(counter));
+	});
+</script>
 
 	<!-- Work Process Area -->
 	<section class="work-process-area pt-100 pb-70">
@@ -571,66 +663,6 @@
 		</div>
 	</section>
 	<!-- Services Area End -->
-
-	<!-- Counter Area -->
-	<div class="counter-area pt-100 pb-70">
-		<div class="container">
-			<div class="section-title text-center">
-				<span class="sp-color2">Our Success Numbers</span>
-				<h2>Check Out Our Business Growth and Achievements</h2>
-				<p>
-					We are proud of the milestones we've achieved in the industry. From successful
-					project completions to innovative IT consulting, our numbers reflect the impact we've
-					made.
-				</p>
-			</div>
-
-			<div class="row pt-45">
-				<div class="col-lg-3 col-6 col-md-3">
-					<div class="counter-another-content">
-						<i class="flaticon-web-development"></i>
-						<h3>26+</h3>
-						<span>Delivered Projects</span>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-6 col-md-3">
-					<div class="counter-another-content">
-						<i class="flaticon-consulting-1"></i>
-						<h3>105+</h3>
-						<span>IT Consulting Sessions</span>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-6 col-md-3">
-					<div class="counter-another-content">
-						<i class="flaticon-startup"></i>
-						<h3>35+</h3>
-						<span>Businesses Launched</span>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-6 col-md-3">
-					<div class="counter-another-content">
-						<i class="flaticon-tick"></i>
-						<h3>26+</h3>
-						<span>Projects Completed</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="counter-shape">
-			<div class="shape1">
-				<img src="assets/images/shape/shape1.png" alt="Decorative Shape 1">
-			</div>
-			<div class="shape2">
-				<img src="assets/images/shape/shape2.png" alt="Decorative Shape 2">
-			</div>
-		</div>
-	</div>
-	<!-- Counter Area End -->
-
 
 
 	<!-- Technology Area -->
