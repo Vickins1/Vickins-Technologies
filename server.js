@@ -99,7 +99,6 @@ app.post("/api/contact", upload.none(), async (req, res) => {
   }
 });
 
-
 // Pages
 app.get("/", (req, res) => res.render("index", { title: "Vickins Tech - Home" }));
 
