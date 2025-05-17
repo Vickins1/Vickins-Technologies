@@ -40,7 +40,6 @@ app.post("/api/contact", upload.none(), async (req, res) => {
   try {
     const { name, email, phone_number, plan, message } = req.body;
 
-    // Ensure plan is an array (handles both single and multiple selections)
     const selectedPlans = Array.isArray(plan) ? plan : plan ? [plan] : [];
 
     // Validate all required fields
@@ -54,7 +53,7 @@ app.post("/api/contact", upload.none(), async (req, res) => {
       return res.redirect("/contact?error=Invalid email format");
     }
 
-    // Validate plan values (optional, to ensure only valid plans are submitted)
+    // Validate plan values
     const validPlans = [
       "e-commerce",
       "pos-systems",
